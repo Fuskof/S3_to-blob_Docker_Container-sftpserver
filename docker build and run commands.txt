@@ -1,0 +1,4 @@
+
+docker build -t azureblob .
+
+docker run -d -p 2222:22 --device /dev/fuse --cap-add SYS_ADMIN --name EXE azureblob blobstor:pass:::upload
